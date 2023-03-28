@@ -1,1 +1,1 @@
-web: gunicorn djangoTitanic.wsgi
+web: gunicorn djangoTitanic.wsgi --log-file -
