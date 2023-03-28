@@ -1,0 +1,6 @@
+Django
+scikit-learn
+numpy
+pandas
+dj-database-url
+django-heroku
