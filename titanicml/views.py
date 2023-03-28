@@ -25,7 +25,7 @@ def result(request):
     age = int(request.GET["age"])
     sibsp = int(request.GET["sibsp"])
     parch = int(request.GET["parch"])
-    fare = int(request.GET["fare"])
+    fare = float(request.GET["fare"])
     embC = int(request.GET["embC"])
     embQ = int(request.GET["embQ"])
     embS = int(request.GET["embS"])

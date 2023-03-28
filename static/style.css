@@ -13,7 +13,8 @@ body {
 }
 
 .container {
-  margin: 2rem auto;
+  padding: 1em;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,14 +22,13 @@ body {
 
 .prediction-box {
   border-radius: 10px;
-  min-width: 50%;
-  margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 1.5em;
   background-color: #3c37ff;
 }
 
 .title {
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .result {
@@ -36,12 +36,17 @@ body {
 }
 
 .result-text {
-  padding: 0.8em;
+  padding: 0.5em;
   margin: 0 auto;
-  /* border: 2px solid; */
-  width: 170px;
+  max-width: 60%;
   background-color: #e6e8ec;
+  font-weight: bold;
   /* visibility: hidden; */
+}
+
+.prediction-text {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 input,
@@ -53,19 +58,91 @@ button {
   border: 0;
   padding: 0.5em;
   width: 100%;
+  font-size: 0.8rem;
 }
 
 button {
-  padding: 0.8em;
   background-color: aqua;
   border: 0;
   margin-top: 2em;
-  font-size: 1rem;
   font-weight: bold;
   color: #323539;
+  text-transform: uppercase;
 }
 
 button:hover {
   background-color: rgb(139, 139, 139);
   cursor: pointer;
+}
+
+.attribution {
+  font-size: 1rem;
+  color: rgb(25, 32, 32);
+}
+
+.attribution a {
+  color: rgb(241, 8, 20);
+}
+.attribution a:hover {
+  color: rgba(240, 128, 128, 0.301);
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: block;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  input,
+  select,
+  button {
+    margin: 0.2em;
+    padding: 0.7em;
+  }
+
+  button {
+    background-color: aqua;
+    margin-top: 1em;
+    padding: 1em;
+  }
+
+  .prediction-form {
+    margin-top: 1em;
+    display: grid;
+    grid-template-areas:
+      "prediction-form-1 prediction-form-2"
+      "prediction-form-3 prediction-form-4"
+      "prediction-form-5 prediction-form-6"
+      "prediction-form-7 prediction-form-8"
+      "prediction-form-9 prediction-form-9"
+      "btn btn";
+    gap: 1em;
+  }
+
+  .prediction-form-9 {
+    grid-area: prediction-form-9;
+  }
+
+  .btn {
+    grid-area: btn;
+  }
+
+  .prediction-box {
+    padding: 1.35em 3em;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .attribution {
+    text-align: center;
+  }
+
+  .result-text {
+    max-width: 30%;
+  }
 }
