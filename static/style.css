@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   background-color: #ffffff;
   color: #323539;
-  background-image: url("https://cdn.pixabay.com/photo/2014/04/04/14/55/titanic-313353_1280.jpg");
+  background-image: url("../assets/background.jpg");
 }
 
 .container {
