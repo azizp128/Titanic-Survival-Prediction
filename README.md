@@ -5,4 +5,4 @@ This is a Machine Learning model that utilizes Logistic Regression to predict th
 In addition, this project includes a web application deployed on the Heroku platform, serving as the focal point for experimenting with deploying an ML model using Django. The web application enables users to interact with the trained model and receive predictions on the survival probability of a passenger based on the information provided.
 
 # Screenshot
-![Page Screenshot](assets/screenshot.png)
+![Page Screenshot](https://raw.githubusercontent.com/azizp128/titanic-survival-prediction-django/refs/heads/main/assets/screenshot.png)
